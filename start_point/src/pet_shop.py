@@ -19,7 +19,6 @@ def increase_pets_sold(pet_shop,number):
 def get_stock_count(pet_shop):
     return len(pet_shop["pets"])
 
-#if i define a function that loops through the dictionary then i should get 
 def get_pets_by_breed(pet_shop,type_of_breed):    
     list = []
     path_to_breed = pet_shop["pets"]
