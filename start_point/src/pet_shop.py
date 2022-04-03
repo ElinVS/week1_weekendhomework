@@ -26,13 +26,17 @@ def get_pets_by_breed(pet_shop,type_of_breed):
         if x["breed"] == type_of_breed:
             list.append(x["breed"])
     return list
-     
+
+def find_pet_by_name(pet_shop,pet_name):
+    path_to_name = pet_shop["pets"]
+
+    for pet in path_to_name:
+        if pet["name"] == pet_name:
+            return pet
 
 
-# def find_pet_by_name(pet_shop, pet_name):
-#         for pet in pet_shop["pets"]:
-#             if pet["name"] == pet_name:
-#                 return pet
+
+
 
 # def get_customer_cash(customer):
 #     return customer["cash"]     
