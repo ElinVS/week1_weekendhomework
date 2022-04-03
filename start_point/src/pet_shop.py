@@ -54,10 +54,8 @@ def add_pet_to_stock(pet_shop, new_pet):
 
     path_to_dict.append(new_pet)
 
-
 def get_customer_cash(customer):
     return customer["cash"]     
-
 
 def remove_customer_cash(person,number):
     person["cash"] -= number
@@ -65,10 +63,15 @@ def remove_customer_cash(person,number):
 def get_customer_pet_count(customer):
     customer["pets"].append(0)
     for x in customer["pets"]:
-        if x == 0:
+        if x < 10:
             return x
 
-# def add_pet_to_customer(person,new_pet):
+def add_pet_to_customer(person,add_pet):
+    add_pet = {"pets":[1]}
+    person.update(add_pet)
+    
+
+
 
 
 
