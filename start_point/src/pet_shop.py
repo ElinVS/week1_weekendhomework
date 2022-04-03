@@ -34,17 +34,15 @@ def find_pet_by_name(pet_shop,pet_name):
         if pet["name"] == pet_name:
             return pet
 
-# pet_name = "Arthur"
-# pet_shop = cc_pet_shop
+# could not solve remove_pet_by_name
 
 # def remove_pet_by_name(pet_shop,pet_name):
-#     path_to_name =  pet_shop["pets"]
-
-#     for pet in path_to_name:
-#         if pet["name"] == pet_name:
-#             path_to_name.pop(pet["name"])
+#     path_to_name = pet_shop["pets"]
+#     for x in path_to_name:
+#         if x["name"] == pet_name:
+#             path_to_name.pop(x["name"])
+#         return x
     
- 
 def add_pet_to_stock(pet_shop, new_pet):
     new_pet = {"name": "Billy",
                     "pet_type": "dog",
@@ -66,9 +64,18 @@ def get_customer_pet_count(customer):
         if x < 10:
             return x
 
+# passes test but improper use of second argument
 def add_pet_to_customer(person,add_pet):
     add_pet = {"pets":[1]}
     person.update(add_pet)
+
+
+
+
+
+
+
+
     
 
 
